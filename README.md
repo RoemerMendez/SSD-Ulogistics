@@ -1,5 +1,5 @@
 # SSD-Ulogistics
-for compile pug
+#for compile pug
 npm install pug-cli -g
 pug -w --pretty index.pug
 
