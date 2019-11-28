@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://lipis.github.io/bootstrap-social/assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://lipis.github.io/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/pretty.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>U-LOGISTICS</title>
+    <!--script(type = 'text/javascript' src = '/javascripts/validate.js')-->
+  </head>
+  <body style="height: 100%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container"><a class="navbar-brand"><img class="navbar-brand-img" src="public/images/logo.png" id="logo"></a>
+        <div class="collapse navbar-collapse">                   <a class="navbar-btn btn btn-sm btn-secondary lift ml-auto" href="./index.pug">Atrás                </a></div>
+      </div>
+    </nav>
+    <div class="col">
+      <div class="container space-2 space-0--lg mt-lg-8">    
+        <div class="row align-items-center h-100">
+          <h1 class="lead text-center text-md-left text-muted mb-6 mb-lg-8">REGISTRO DEL PEDIDO  </h1>
+        </div>
+        <div class="col">
+          <div class="input-group input-group-lg mb-3 mb-lg-0">
+            <div class="form-group">
+              <input class="form-control" type="date" id="date" name="date" placeholder="fecha" required><small class="form-text text-muted">* campo obligatorio</small>
+            </div>
+            <div class="form-group form-group col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0">
+              <input class="form-control" type="text" id="name" name="name" placeholder="nombre" required><small class="form-text text-muted">* campo obligatorio       </small>
+            </div>
+          </div>
+          <div class="input-group input-group-lg mb-3 mb-lg-0">
+            <div class="form-group">
+              <select class="form-control" type="text" id="almacen" name="almacen" placeholder="almacen" required>
+                <option value="" select hidden>Almacen de recojo</option>
+                <option id="Almacen1" name="Almacen1" value="Almacen1">Almacen1</option>
+                <option id="Almacen2" name="Almacen2" value="Almacen2">Almacen2</option>
+                <option id="Almacen3" name="Almacen3" value="Almacen3">Almacen4</option>
+                <option id="Almacen4" name="Almacen4" value="Almacen4">Almacen4</option>
+              </select><small class="form-text text-muted" id="small_service">* campo obligatorio                            </small>
+            </div>
+            <div class="form-group form-group col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0">
+              <select class="form-control" type="text" id="goods" name="goods" placeholder="goods" required>
+                <option value="" select hidden>Mercadería</option>
+                <option id="Mercaderia1" name="Mercaderia1" value="Mercaderia1">Mercaderia1</option>
+                <option id="Mercaderia2" name="Mercaderia2" value="Mercaderia2">Mercaderia2</option>
+                <option id="Mercaderia3" name="Mercaderia3" value="Mercaderia3">Mercaderia3</option>
+                <option id="Mercaderia4" name="Mercaderia4" value="Mercaderia4">Mercaderia4</option>
+              </select><small class="form-text text-muted" id="small_service">* campo obligatorio</small>
+            </div>
+          </div>
+          <div class="input-group input-group-lg mb-3 mb-lg-0">  
+            <div class="form-group">
+              <input class="form-control" type="quantity" id="quantity" name="quantity" placeholder="Cantidad" required><small class="form-text text-muted">* campo obligatorio</small>
+            </div>
+            <div class="form-group col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0">
+              <button class="btn btn-block btn-secondary" type="submit">Disponibilidad                                                                      </button>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">visualizar pedido </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

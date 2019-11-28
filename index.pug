@@ -1,0 +1,31 @@
+extends layout 
+block content
+    head 
+        include head
+        //script(type = 'text/javascript' src = '/javascripts/validate.js')
+    body(style = 'height: 100%')
+        div(class = 'container')
+            a(href = '/' class = 'navbar-brand') INICIAR SESIÓN
+        div(class = 'container space-2 space-0--lg mt-lg-8')
+            div(class = 'row align-items-center h-100')
+                div(class = 'col')
+                    div(class = 'row')
+                        img(src="public/images/logo1.png")   
+                    div(class = 'row')             
+                        h1(class = 'display-4 font-size-48--md-down') Tus envíos llegarán a tiempo y seguros                    
+                div(class = 'col')
+                    form(id = 'form' action = 'login' method = 'post' onsubmit = 'return validateLogIn()')
+                        fieldset
+                            div(class = 'form-group')
+                                input(type = 'text' id = 'user' name = 'user' placeholder = 'usuario' value = user class = 'form-control' autofocus required) 
+                            div(class = 'form-group')
+                                input(type = 'password' id = 'password' name = 'password' placeholder = 'contraseña' value = password class = 'form-control' required)
+                            button(type = 'submit' class = 'btn btn-primary btn-lg btn-block') iniciar sesión
+        div(class ='container space-2 space-0--lg mt-lg-8')
+            div(class = 'row align-items-center h-100')
+                div(class = 'col')
+                    img(src="public/images/camiones.jpg", id="ejemplo")
+                div(class = 'col')
+                    img(src="public/images/avion.jpg", id="ejemplo")
+                div(class = 'col')
+                    img(src="public/images/barcos.jpg", id="ejemplo")

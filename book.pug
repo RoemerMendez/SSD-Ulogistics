@@ -1,0 +1,54 @@
+extends layout 
+block content
+    head 
+        include head
+        //script(type = 'text/javascript' src = '/javascripts/validate.js')
+    body(style = 'height: 100%')
+        nav(class = 'navbar navbar-expand-lg navbar-light bg-white')
+            div(class = 'container')
+                a(class = 'navbar-brand' )
+                    img(src="public/images/logo.png", id="logo", class='navbar-brand-img')
+                div(class = 'collapse navbar-collapse')                    
+                    a(class = 'navbar-btn btn btn-sm btn-secondary lift ml-auto', href="./index.pug") Atrás                
+        div(class = 'col')
+            div(class = 'container space-2 space-0--lg mt-lg-8')     
+                div(class = 'row align-items-center h-100')
+                    h1(class = 'lead text-center text-md-left text-muted mb-6 mb-lg-8') REGISTRO DEL PEDIDO  
+                div(class = 'col')
+                    div(class = 'input-group input-group-lg mb-3 mb-lg-0')
+                        div(class = 'form-group')
+                            input(type = 'date' id = 'date' name = 'date' placeholder = 'fecha' value = date class = 'form-control' required)
+                            small(class = 'form-text text-muted') * campo obligatorio
+                        div(class = 'form-group form-group col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0')
+                            input(type = 'text' id = 'name' name = 'name' placeholder = 'nombre' value = name class = 'form-control' required)
+                            small(class = 'form-text text-muted') * campo obligatorio       
+                    div(class = 'input-group input-group-lg mb-3 mb-lg-0')
+                        div(class = 'form-group')
+                            select(type = 'text' id = 'almacen' name = 'almacen' placeholder = 'almacen' value = name class = 'form-control' required)
+                                    option(value = '' select hidden) Almacen de recojo
+                                    option(id = 'Almacen1' name = 'Almacen1' value = 'Almacen1') #{Almacen[1]}
+                                    option(id = 'Almacen2' name = 'Almacen2' value = 'Almacen2') #{Almacen[2]}
+                                    option(id = 'Almacen3' name = 'Almacen3' value = 'Almacen3') #{Almacen[3]}
+                                    option(id = 'Almacen4' name = 'Almacen4' value = 'Almacen4') #{Almacen[4]}
+                            small(id = 'small_service' class = 'form-text text-muted') * campo obligatorio                            
+                        div(class = 'form-group form-group col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0')
+                            select(type = 'text' id = 'goods' name = 'goods' placeholder = 'goods' value = name class = 'form-control' required)
+                                    option(value = '' select hidden) Mercadería
+                                    option(id = 'Mercaderia1' name = 'Mercaderia1' value = 'Mercaderia1') #{Mercaderia[1]}
+                                    option(id = 'Mercaderia2' name = 'Mercaderia2' value = 'Mercaderia2') #{Mercaderia[2]}
+                                    option(id = 'Mercaderia3' name = 'Mercaderia3' value = 'Mercaderia3') #{Mercaderia[3]}
+                                    option(id = 'Mercaderia4' name = 'Mercaderia4' value = 'Mercaderia4') #{Mercaderia[4]}
+                            small(id = 'small_service' class = 'form-text text-muted') * campo obligatorio
+                    div(class = 'input-group input-group-lg mb-3 mb-lg-0')   
+                        div(class = 'form-group')
+                            input(type = 'quantity' id = 'quantity' name = 'quantity' placeholder = 'Cantidad' value = quantity class = 'form-control' required)
+                            small(class = 'form-text text-muted') * campo obligatorio
+                        div(class = 'form-group col-sm-6 col-lg-2 u-header__mega-menu-col mb-3 mb-lg-0')
+                            button(type = 'submit' class = 'btn btn-block btn-secondary') Disponibilidad                                                                      
+                    button(type = 'submit' class = 'btn btn-primary btn-lg btn-block') visualizar pedido 
+            
+        
+            
+            
+
+        

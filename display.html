@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, user-scalable = no, initial-scale = 1.0, maximum-scale = 1.0, minimum-scale = 1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://lipis.github.io/bootstrap-social/assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://lipis.github.io/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" type="text/css" href="public/stylesheet/pretty.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>U-LOGISTICS</title>
+    <!--script(type = 'text/javascript' src = '/javascripts/validate.js')-->
+  </head>
+  <body style="height: 100%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container"><a class="navbar-brand"><img class="navbar-brand-img" src="public/images/logo.png" id="logo"></a>
+        <div class="collapse navbar-collapse">                   <a class="navbar-btn btn btn-sm btn-secondary lift ml-auto" href="./index.pug">Atrás </a></div>
+      </div>
+    </nav>
+    <div class="col">
+      <div class="container space-2 space-0--lg mt-lg-8">    
+        <div class="row align-items-center h-100">
+          <h1 class="lead text-center text-md-left text-muted mb-6 mb-lg-8">Visualización del pedido</h1>
+        </div>
+        <div class="input-group input-group-lg mb-3 mb-lg-0">
+          <div class="form-group">
+            <select class="form-control" type="text" id="list" name="Lista de pedidos" placeholder="list" required>
+              <option value="" select hidden>Almacen de recojo</option>
+              <option id="list1" name="list1" value="list1">list1</option>
+              <option id="list2" name="list2" value="list2">list2</option>
+              <option id="list3" name="list3" value="list3">list3</option>
+              <option id="list4" name="list4" value="list4">list4</option>
+            </select>
+          </div>
+        </div>
+        <div class="container">
+          <h2>Plan de asignación</h2>
+          <div class="table-responsive">
+            <table class="table table-striped table-sm">
+              <thead>
+                <tr> 
+                  <th>ID Pedido</th>
+                  <th>Proveedor de transporte</th>
+                  <th>Tipo de transporte</th>
+                  <th>Capacidad</th>
+                  <th>Toneladas</th>
+                  <th>Costo</th>
+                  <th>Precio total</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
